@@ -1,6 +1,36 @@
 body{
     background-color: grey;
 }
+
+img{
+    height: 200px;
+    animation: movimentar 4s infinite;
+    margin-left: 0px;
+    transform: scaleX(1);
+    margin-top: 380px;
+}
+
+@keyframes movimentar{
+    0%{
+        transform: scaleX(1);
+        margin-left: 0px;
+    }
+    50%
+    {
+        transform: scaleX(1);
+        margin-left: 1200px;
+     
+    }
+
+    51%{transform: scaleX(-1);
+        margin-left: 1190px;
+     }
+    100%{
+        margin-left: 0px;
+        transform: scaleX(-1);
+    }
+}
+
 .input1{
     lighting-color: blueviolet;
     height: 10px;
